@@ -29,15 +29,16 @@
                 @csrf
 
                 <div class="row">
-                    <div class="col-md-3"><input class="form-control" type="text" name="nome" placeholder="Nome">
+                    <div class="col-md-3"><input class="form-control mb-2" type="text" name="nome"
+                            placeholder="Nome">
                     </div>
-                    <div class="col-md-3"><input class="form-control" type="text" id="preco_custo" name="preco_custo"
-                            placeholder="Preço de custo (R$)">
+                    <div class="col-md-3"><input class="form-control mb-2" type="text" id="preco_custo"
+                            name="preco_custo" placeholder="Preço de custo (R$)">
                     </div>
-                    <div class="col-md-3"><input class="form-control" type="text" id="preco_venda" name="preco_venda"
-                            placeholder="Preço de venda (R$)">
+                    <div class="col-md-3"><input class="form-control mb-2" type="text" id="preco_venda"
+                            name="preco_venda" placeholder="Preço de venda (R$)">
                     </div>
-                    <div class="col-md-3"><input class="form-control" type="number" name="num_unidades"
+                    <div class="col-md-3"><input class="form-control mb-2" type="number" name="num_unidades"
                             placeholder="Número de unidades">
                     </div>
                 </div>
@@ -58,7 +59,7 @@
                     <div class="col-md-3">
                         <div class="card mt-4">
                             <div class="card-header">
-                                {{ $linha->nome }} -
+                                {{ $linha->nome }}<br>
                                 @if ($linha->status == 'EMestoque')
                                     <span class="text-success">Em estoque</span>
                                 @elseif($linha->status == 'EMfalta')
@@ -84,12 +85,12 @@
                                     <button type="submit" class="btn btn-zamix">Retirar tudo do estoque</button>
                                 </form>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <a href="{{ route('admin-produto-simples-att', ['id' => $linha->id]) }}"
                                             class="btn btn-outline-success mt-2">Atualizar</a>
                                     </div>
 
-                                    <div class="col-md-2">
+                                    <div class="col-md-6">
                                         <form action="{{ route('admin-produto-simples-delete', ['id' => $linha->id]) }}"
                                             method="POST">
                                             @csrf

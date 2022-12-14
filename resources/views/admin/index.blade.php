@@ -13,19 +13,19 @@
         <div class="color-main p-5 rounded">
             <h1 class="text-light">Bem vindo! <b>{{ @Auth::user()->name }}</b></h1>
             <p class="lead text-light">Este e o painel do estoque.</p>
-            <a class="btn btn-lg btn-zamix" href="{{ route('admin-registrar') }}" role="button">Registrar usuários
+            <a class="btn btn-zamix mb-2" href="{{ route('admin-registrar') }}" role="button">Registrar usuários
                 &raquo;</a>
-            <a class="btn btn-lg btn-outline-primary" href="{{ route('admin-produto-simples') }}" role="button">Produto
+            <a class="btn btn-outline-primary mb-2" href="{{ route('admin-produto-simples') }}" role="button">Produto
                 simples
                 &raquo;</a>
-            <a class="btn btn-lg btn-outline-primary" href="" role="button">Produto compostos
+            <a class="btn btn-outline-primary mb-2" href="#" role="button">Produto compostos
                 &raquo;</a>
-            <a class="btn btn-lg btn-outline-primary" href="{{ route('admin-requisicao') }}" role="button">Criar
+            <a class="btn btn-outline-primary mb-2" href="{{ route('admin-requisicao') }}" role="button">Criar
                 requisições
                 &raquo;</a>
-            <a class="btn btn-lg btn-outline-primary" href="{{ route('admin-relatorios') }}" role="button">Relatórios
+            <a class="btn btn-outline-primary mb-2" href="{{ route('admin-relatorios') }}" role="button">Relatórios
                 &raquo;</a>
-            <a class="btn btn-lg btn-outline-danger" href="{{ route('admin-logout') }}">Deslogar &raquo;</a>
+            <a class="btn btn-outline-danger mb-2" href="{{ route('admin-logout') }}">Deslogar &raquo;</a>
         </div>
 
         <h4 class="mt-5 text-light">Requisições:</h4>

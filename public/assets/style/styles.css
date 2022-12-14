@@ -60,7 +60,7 @@
 .form-center {
     background-color: rgba(17, 25, 40, 0.61);
     backdrop-filter: blur(10px) saturate(180%);
-    margin-top: 25vh;
+    margin-top: 20px;
     padding: 50px;
     border-radius: 12px;
 }
