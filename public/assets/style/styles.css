@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.pag {
+    background-image: url('../img/foto.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.pag-registra {
+    background-image: url('../img/servi.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+}
+
+.pag-request {
+    background-image: url('../img/request.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.color-main {
+    background: #202020 !important;
+}
+
+
+.btn-zamix {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ff5500 !important;
+    --bs-btn-border-color: #ff5500 !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ee3c06;
+    --bs-btn-hover-border-color: #ee3c06;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ee3c06;
+    --bs-btn-active-border-color: #ee3c06;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #ff5500 !important;
+    --bs-btn-disabled-border-color: #ff5500 !important;
+}
+
+
+.navbar {
+    background-color: #ff5500 !important;
+}
+
+.form-center {
+    background-color: rgba(17, 25, 40, 0.61);
+    backdrop-filter: blur(10px) saturate(180%);
+    margin-top: 25vh;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.card-body {
+    color: #fff;
+    background: #202020;
+}
+
+.card-header:first-child {
+    background: rgb(46, 46, 46);
+    color: #fff;
+}
+
+.card-footer:last-child {
+    background: rgb(46, 46, 46);
+}
